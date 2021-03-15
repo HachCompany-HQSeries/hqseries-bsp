@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- BEGINNING OF HACH ADDITIONS -->
+  <remote name="hachpublic"   fetch="git://github.com/HachCompany-HQSeries"/>
+
+  <project name="meta-r1701-public.git" path="sources/meta-r1701-public" remote="hachpublic" revision="master" />
+  <!-- END OF HACH ADDITIONS -->
+
+
+  <!-- The following repos are copied directly from the repo manifest provided by Digi at https://github.com/digi-embedded/dey-manifest.git (tag 2.6-r3.1) -->
   <default sync-j="4" revision="thud"/>
 
   <remote name="digi"  fetch="git://github.com/digi-embedded"/>
