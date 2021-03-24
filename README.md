@@ -28,14 +28,13 @@ Follow these steps to install HQ Series Firmware:
 3. Use repo to download HQ Series Firmware.
 
     ```
-    $ repo init -u https://github.com/HachCompany-HQSeries/hqseries-bsp
-    $ repo sync -j8 --no-repo-verify
+    $ repo init -u https://github.com/HachCompany-HQSeries/hqseries-bsp && repo sync -j8 --no-repo-verify
     ```
 
 4. Build the firmware image.
 
     ```
-    $ mkdir build && cp build
+    $ mkdir build && cd build
     $ source ../mkproject.sh -m meta-r1701-public -p r1701
     $ bitbake hqseries-portable-image
     ```
